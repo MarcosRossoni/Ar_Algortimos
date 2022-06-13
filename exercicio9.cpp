@@ -2,7 +2,7 @@
  #include <conio.h>
  
  struct registro {
- 		int data[3];
+// 		int data[3];
  		int cod;
 		char nome[50];
 		char end[50];
@@ -33,7 +33,8 @@
 		//	}
 		//}
 		
-		registro[i].cod = registro[i].cod++;
+//		printf("\nDigite o Codigo do Cliente: ");
+//		scanf("%d",registro[i].cod);
 				
 		printf("\nNome do Cliente: ");
 		scanf("%s",registro[i].nome);
