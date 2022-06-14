@@ -16,7 +16,7 @@ int main() {
         cont = cont + 1;
     }
 
-    printf("\nSoma dos elementos da sequencia: %10f", soma);
+    printf("\nSoma dos elementos da sequencia: %10f\n", soma);
     system("pause");
     return 0;
 }
