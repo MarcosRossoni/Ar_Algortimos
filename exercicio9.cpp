@@ -24,15 +24,15 @@
 			for (i = 0; i <= 4; i++) {
 				for (d = 0; d <= 2; d++){
 					if (d == 0){
-						printf("\nInforme o dia de vencimento: ");
+						printf("\nInforme o dia de nascimento: ");
 						scanf("%d",&registro[i].data[0]);
 					} 
 					if(d == 1){
-						printf("\nInforme o mes de vencimento: ");
+						printf("\nInforme o mes de nascimento: ");
 						scanf("%d",&registro[i].data[1]);
 					}
 					if(d == 2){
-						printf("\nInforme o ano de vencimento: ");
+						printf("\nInforme o ano de nascimento: ");
 						scanf("%d",&registro[i].data[2]);
 					}
 				}
@@ -71,20 +71,18 @@
 		    	printf(" \n O Valor da divida do cliente: %0.2f ", registro[i].vldivida);
 		    	printf(" \n A Idade do cliente: %d ", registro[i].idade);
 		    	printf(" \n O Status do cadastro do cliente: %s ", registro[i].end);
-		    	printf(" \n ------------------------------------------------------------------------");
+		    	printf(" \n ------------------------------------------------------------------------------------------------\n");
 			}
-			
-			printf("\nPara encerrar o sistema digite 1, para realizar novos cadastros digite 2: \n");
+			 
+			printf("\nPara realizar novos cadastros digite 1, para encerrar precione qualquer tecla: \n");
 			scanf("%d",&rep);
 			
-			if (rep == 2) {
+			if (rep == 1) {
 				system("cls");
 			}	
-		}while(rep == 2);
+		}while(rep == 1);
 		
-		if (rep == 1) {
-			printf("\n\nSistema encerrado com sucesso, precione ENTER para fechar.");
-		} 
+		printf("\n\nSistema encerrado com sucesso, precione ENTER para fechar.");
 		
 		return(0);	  
 	 }
