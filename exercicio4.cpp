@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    int n, cont;
+    int cont;
     float x, soma;
 
     cont = 1;
